@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BWS</title>
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="errorHandler.js"></script>
+    <script src="nav.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <letters>   
+                <letter>B</letter>
+                <letter>W</letter>
+                <letter>S</letter>
+            </letters>
+            Bethke Web Solutions
+        </div>
+        <div id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <topnav>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Hosting</a></li>
+            <li><a>Services</a></li>
+            <li><a>Kontakt</a></li>
+        </ul>
+    </topnav>
+    <div id="wprError">
+        <div class="title">Oh, da ist etwas schief gelaufen!</div>
+        <span id="errorCode"></span> - <span id="errorText"></span>
+        <div id="wprErrorInfo">
+            <span id="errorId"></span>
+            <span id="errorInfo"></span>
+        </div>
+    </div>
+    <content></content>
+</body>
+</html>

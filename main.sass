@@ -1,0 +1,93 @@
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+    
+$clr-primary: #00B8F1
+$clr-secondary: #00344C
+$clr-danger: #881212
+$ff-primary: sans-serif
+
+///////////////////////////////////
+// Root Styles
+///////////////////////////////////
+
+*,
+*::after,
+*::before
+    box-sizing: border-box
+
+body
+    margin: 0
+    font-family: $ff-primary    
+
+///////////////////////////////////
+// Nav and Header
+///////////////////////////////////
+
+header
+    display: flex
+    justify-content: space-between
+    .logo
+        border-bottom: 5px solid $clr-primary
+        padding: 1em
+        position: relative
+        letters
+            display: block
+            letter
+                font-size: 3rem
+                color: $clr-primary
+                font-weight: bold
+                text-shadow: 2px 0px white
+            letter:not(:first-child)
+                display: inline-block
+        &::after
+            content: ""
+            position: absolute
+            bottom: -5px
+            right: 0px
+            top: 0px
+            border-right: 5px solid $clr-primary
+            transform: skewX(-30deg)
+            transform-origin: bottom left
+    #hamburger
+        font-size: 2rem
+        align-self: center
+        padding: 1em
+topnav
+    position: relative
+    ul
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        flex-flow: column wrap
+        li
+            margin: 0
+            width: 100vw
+            border-bottom: 5px solid $clr-secondary
+            a
+                display: block
+                padding: 1em
+                &:hover
+                    margin-left: 1em
+                    transition-property: margin-left
+                    transition-duration: 200ms
+
+///////////////////////////////////
+// Error Handling
+///////////////////////////////////
+
+#wprError
+    display: none
+    background: $clr-danger
+    padding: 1em
+    color: white
+    .title
+        font-weight: bold
+        font-size: 1.1rem
+        margin-bottom: 1em
+    #errorCode
+        font-weight: bold
+    #wprErrorInfo
+        border-top: 2px solid white
+        margin-top: 1em
+        font-size: 0.9rem
