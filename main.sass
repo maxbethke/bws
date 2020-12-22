@@ -1,10 +1,4 @@
-@import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/solid.scss";
-    
-$clr-primary: #00B8F1
-$clr-secondary: #00344C
-$clr-danger: #881212
-$ff-primary: sans-serif
+@import _vars.sass
 
 ///////////////////////////////////
 // Root Styles
@@ -17,7 +11,7 @@ $ff-primary: sans-serif
 
 body
     margin: 0
-    font-family: $ff-primary    
+    font-family: $ff-primary
 
 ///////////////////////////////////
 // Nav and Header
@@ -54,6 +48,7 @@ header
         padding: 1em
 topnav
     position: relative
+    display: none
     ul
         list-style: none
         padding: 0

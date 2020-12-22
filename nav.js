@@ -1,6 +1,7 @@
 var init = () => {
     $("#hamburger").on("click", toggleMenu);
     $("topnav a").on("click", navigate);
+    $("topnav a").first().trigger("click", {target: $("#linkHome")});
 }
 
 var toggleMenu = (e) => {
